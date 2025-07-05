@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { Mail, Github, ArrowUp } from 'lucide-react';
+import { Mail, Github, ArrowUp, Phone } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -35,6 +35,12 @@ const Contact = () => {
 
   const contactInfo = [
     {
+      icon: Phone,
+      label: "Phone",
+      value: "9875774558",
+      href: "tel:9875774558"
+    },
+    {
       icon: Mail,
       label: "Email",
       value: "vinayak4558sharma@gmail.com",
@@ -44,7 +50,7 @@ const Contact = () => {
       icon: Github,
       label: "GitHub",
       value: "github.com/vinayak",
-      href: "https://github.com/vinayak"
+      href: "https://github.com/vinayak4558"
     },
     {
       icon: ArrowUp,

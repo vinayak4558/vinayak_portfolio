@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -11,32 +10,15 @@ const Projects = () => {
       title: "Housing Price Prediction",
       description: "Machine learning pipeline using scikit-learn to predict house prices with data preprocessing, feature scaling, and model evaluation achieving 12.5% MAE.",
       technologies: ["Python", "scikit-learn", "pandas", "NumPy", "seaborn", "Matplotlib"],
-      github: "https://github.com/vinayak/housing-prediction",
+      github: "https://github.com/vinayak4558/price-prediction-model",
       demo: "#",
       type: "Machine Learning"
-    },
-    {
-      title: "E-Locker System",
-      description: "Innovative digital locker solution developed during JKLU Hackathon with secure authentication and real-time monitoring capabilities.",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "JWT"],
-      github: "https://github.com/vinayak/e-locker",
-      demo: "#",
-      type: "Full Stack"
-    },
-    {
-      title: "ETL Data Pipeline",
-      description: "Enterprise-level data ingestion pipeline built during internship at Celebal Technologies for processing structured datasets efficiently.",
-      technologies: ["Python", "MySQL", "ETL", "Data Processing"],
-      github: "https://github.com/vinayak/etl-pipeline",
-      demo: "#",
-      type: "Data Engineering"
     },
     {
       title: "Personal Portfolio",
       description: "Responsive portfolio website showcasing projects and skills with modern design principles and smooth animations.",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-      github: "https://github.com/vinayak/portfolio",
-      demo: "https://vinayak.vercel.app",
+      demo: "https://vinayakportfolio.vercel.app",
       type: "Frontend"
     }
   ];
@@ -70,18 +52,24 @@ const Projects = () => {
                     </Badge>
                   ))}
                 </div>
-                <div className="flex gap-3">
-                  <Button size="sm" variant="outline" onClick={() => window.open(project.github, '_blank')}>
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
-                  </Button>
-                  {project.demo !== "#" && (
-                    <Button size="sm" onClick={() => window.open(project.demo, '_blank')}>
-                      <ArrowUp className="w-4 h-4 mr-2 transform rotate-45" />
-                      Demo
-                    </Button>
-                  )}
-                </div>
+
+                {/* Only show buttons if project is NOT the portfolio */}
+                {project.title !== "Personal Portfolio" && (
+                  <div className="flex gap-3">
+                    {project.github && (
+                      <Button size="sm" variant="outline" onClick={() => window.open(project.github, '_blank')}>
+                        <Github className="w-4 h-4 mr-2" />
+                        Code
+                      </Button>
+                    )}
+                    {project.demo && project.demo !== "#" && (
+                      <Button size="sm" onClick={() => window.open(project.demo, '_blank')}>
+                        <ArrowUp className="w-4 h-4 mr-2 transform rotate-45" />
+                        Demo
+                      </Button>
+                    )}
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}

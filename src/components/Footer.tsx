@@ -19,7 +19,7 @@ const Footer = () => {
     },
     {
       icon: Github,
-      href: "https://github.com/vinayak",
+      href: "https://github.com/vinayak4558",
       label: "GitHub"
     },
     {
@@ -37,7 +37,7 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h3 className="font-semibold text-lg gradient-text">Vinayak Sharma</h3>
             <p className="text-muted-foreground text-sm">
-              Aspiring Full-Stack Developer & Data Engineer
+              Data Engineer
             </p>
           </div>
 

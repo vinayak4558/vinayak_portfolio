@@ -26,11 +26,10 @@ const Hero = () => {
             Hi, I'm <span className="gradient-text">Vinayak Sharma</span>
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground mb-4">
-            Aspiring Full-Stack Developer & Data Engineer
+            Aspiring Data Engineer
           </p>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Passionate about building scalable web applications and turning data into actionable insights.
-            Currently pursuing Computer Science Engineering with expertise in Python, MERN Stack, and Data Engineering.
+          Passionate about transforming data into actionable insights with expertise in Python and Data Engineering — including ETL pipelines, data modeling, and big data technologies.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -46,7 +45,7 @@ const Hero = () => {
               variant="outline" 
               size="lg" 
               className="text-lg px-8 py-3"
-              onClick={() => window.open('https://github.com/vinayak', '_blank')}
+              onClick={() => window.open('https://drive.google.com/file/d/1de2pxOEG2qt5Dfvt7GIEObBk20PE38Q_/view?usp=drivesdk', '_blank')}
             >
               <Github className="mr-2 h-5 w-5" />
               View Resume
