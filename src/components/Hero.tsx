@@ -26,7 +26,7 @@ const Hero = () => {
             Hi, I'm <span className="gradient-text">Vinayak Sharma</span>
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground mb-4">
-            Aspiring Data Engineer
+            Aspiring salesforce developer
           </p>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
           Passionate about transforming data into actionable insights with expertise in Python and Data Engineering — including ETL pipelines, data modeling, and big data technologies.
