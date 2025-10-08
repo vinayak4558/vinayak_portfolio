@@ -23,7 +23,7 @@ const About = () => {
                 <div className="w-48 h-48 mx-auto mb-6 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
                   <div className="w-44 h-44 bg-background rounded-full flex items-center justify-center">
                    
-                    <img src="pfp.png" alt="" className='rounded-full' />
+                    <img src="photo.jpg" alt="" className='rounded-full' />
                   </div>
                 </div>
                 <div className="text-center">
